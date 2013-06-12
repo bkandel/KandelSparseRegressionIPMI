@@ -12,7 +12,7 @@ sudo R CMD INSTALL ANTsR
 You may have to install some dependencies for ANTsR (if you don't have the dependencies, an error message will appear
 during the install step).  To compile the document 'master.Rnw', you will also have to install the 'knitr' package.  Once R and ANTsR are installed, open up an R session in the directory this message lives in and type: 
 
-```r
+```R
 require(knitr)
 knit('master.Rnw')
 ```

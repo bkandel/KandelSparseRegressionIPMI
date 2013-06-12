@@ -17,6 +17,6 @@ require(knitr)
 knit('master.Rnw')
 ```
 
-This will generate a PDF with results computed on the fly from the input data supplied.  It may take a while (a couple of
+This will generate 'master.tex' with results computed on the fly from the input data supplied, which can then be converted to a PDF document using pdflatex.  It may take a while (a couple of
 hours from beginning to end), depending on how fast your computer is.  If you are familiar with R, feel free to explore the source code chunks in master.Rnw.
 

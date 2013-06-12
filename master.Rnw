@@ -79,7 +79,7 @@ dev.off()
 \centering
 \includegraphics[width=10cm]{fig/AgePredictionOurMethod.pdf}
 \includegraphics[width=10cm]{fig/AgePredictionGLMNET.pdf}
-\caption{Predicting age using our method.  Correlation coefficient in the test dataset using our method is  \Sexpr{age.prediction$stats$corcoeff.test}, with p-value of \Sexpr{age.prediction$stats$pvalue.test}, and using the elastic net is \Sexpr{age.glmnet.corcoeff} with p-value \Sexpr{age.glmnet.pvalue}.}
+\caption{Predicting age using our method.  Correlation coefficient in the test dataset using our method is  \Sexpr{age.prediction$stats$corcoeff.test}, with p-value of \Sexpr{age.prediction$stats$pvalue.test}, and using the elastic net is \Sexpr{age.glm.corcoeff} with p-value \Sexpr{age.glm.pvalue}.}
 \label{fig:age_our_method}
 \end{figure}
 

@@ -1,0 +1,142 @@
+"","names","diagnosis","abeta","animal","age","edu","mmse","tau","bnt","trailsb","wordlisttotal","delayedrecall","immediatetrials","wordlistrecalltotal","wordlistmemorytrial1","PatientStatus"
+"1","/home/bkandel/data/wolk_regression/processing_output/5072/20071012/5072_20071012_thicknorm_lores.nii.gz","MCI - memory plus other",116.69,16,68,16,26,106.37,29,131,13,8,8,4,4,"MCI"
+"2","/home/bkandel/data/wolk_regression/processing_output/5761/20080725/5761_20080725_thicknorm_lores.nii.gz","",225.24,13,81,13,22,42.22,15,997,19,2,3,4,4,NA
+"3","/home/bkandel/data/wolk_regression/processing_output/6239/20090626/6239_20090626_thicknorm_lores.nii.gz","AD probable",196.81,12,77,16,26,33.86,26,206,14,6,8,3,3,"Dementia"
+"4","/home/bkandel/data/wolk_regression/processing_output/1406/20071030/1406_20071030_thicknorm_lores.nii.gz","Normal",263.53,26,71,20,30,30.73,30,73,24,16,15,9,5,"Normal"
+"5","/home/bkandel/data/wolk_regression/processing_output/4055/20080131/4055_20080131_thicknorm_lores.nii.gz","AD possible",211.18,7,83,10,15,41.71,8,996,11,0,2,0,4,"Dementia"
+"6","/home/bkandel/data/wolk_regression/processing_output/3465/20080305/3465_20080305_thicknorm_lores.nii.gz","AD probable",149.32,8,78,16,18,64.84,13,188,10,0,0,0,2,"Dementia"
+"7","/home/bkandel/data/wolk_regression/processing_output/5247/20070614/5247_20070614_thicknorm_lores.nii.gz","Dementia with Lewy bodies",171.523,6,85,14,21,81.571,9,300,10,2,2,1,3,NA
+"8","/home/bkandel/data/wolk_regression/processing_output/4436/20070727/4436_20070727_thicknorm_lores.nii.gz","MCI - memory plus other",98.751,7,76,12,26,225.03,20,300,12,3,3,6,2,"MCI"
+"9","/home/bkandel/data/wolk_regression/processing_output/4955.02/20110805/4955.02_20110805_thicknorm_lores.nii.gz","Normal",260,28,72,16,30,72,29,60,27,22,22,9,8,"Normal"
+"10","/home/bkandel/data/wolk_regression/processing_output/2356/20080222/2356_20080222_thicknorm_lores.nii.gz","AD possible",152.75,NA,71,6,NA,71.31,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"11","/home/bkandel/data/wolk_regression/processing_output/6554/20090310/6554_20090310_thicknorm_lores.nii.gz","Normal",265,14,58,16,29,96,29,69,22,8,13,7,5,"Normal"
+"12","/home/bkandel/data/wolk_regression/processing_output/8160/20110228/8160_20110228_thicknorm_lores.nii.gz","Frontotemporal dementia",234,9,69,18,26,33,17,105,16,1,4,5,2,"Dementia"
+"13","/home/bkandel/data/wolk_regression/processing_output/2375/20070223/2375_20070223_thicknorm_lores.nii.gz","AD probable",121.741,7,62,5,10,78.655,14,995,9,0,4,0,3,"Dementia"
+"14","/home/bkandel/data/wolk_regression/processing_output/3178.02/20090508/3178.02_20090508_thicknorm_lores.nii.gz","Normal",332.21,25,61,16,30,46.17,30,39,27,10,12,10,7,"Normal"
+"15","/home/bkandel/data/wolk_regression/processing_output/4128/20120119/4128_20120119_thicknorm_lores.nii.gz","Normal",367,17,63,18,29,39,23,55,22,20,20,9,5,"Normal"
+"16","/home/bkandel/data/wolk_regression/processing_output/4689/20070330/4689_20070330_thicknorm_lores.nii.gz","AD probable",129.331,12,62,15,20,100.826,19,300,16,0,6,0,4,"Dementia"
+"17","/home/bkandel/data/wolk_regression/processing_output/182.33/20080605/182.33_20080605_thicknorm_lores.nii.gz","Normal",231.52,20,76,18,30,47.74,27,74,24,16,16,9,6,"Normal"
+"18","/home/bkandel/data/wolk_regression/processing_output/3741.01/20110131/3741.01_20110131_thicknorm_lores.nii.gz","Normal",221,25,84,20,30,38,29,55,29,25,24,10,9,"Normal"
+"19","/home/bkandel/data/wolk_regression/processing_output/8314/20110923/8314_20110923_thicknorm_lores.nii.gz","MCI - memory",202,0,72,12,29,65,20,75,23,NA,NA,9,6,"MCI"
+"20","/home/bkandel/data/wolk_regression/processing_output/7315/20091203/7315_20091203_thicknorm_lores.nii.gz","AD probable",156,12,59,12,17,66,27,996,12,3,4,3,4,"Dementia"
+"21","/home/bkandel/data/wolk_regression/processing_output/7264/20091123/7264_20091123_thicknorm_lores.nii.gz","",258,17,67,18,29,60,30,76,17,10,7,7,4,NA
+"22","/home/bkandel/data/wolk_regression/processing_output/3691/20070502/3691_20070502_thicknorm_lores.nii.gz","Normal",190.921,26,85,15,30,38.103,28,60,23,17,18,8,6,"Normal"
+"23","/home/bkandel/data/wolk_regression/processing_output/4504/20071002/4504_20071002_thicknorm_lores.nii.gz","AD probable",137.579,13,69,16,28,26.272,27,270,12,13,15,5,3,"Dementia"
+"24","/home/bkandel/data/wolk_regression/processing_output/3798.03/20071030/3798.03_20071030_thicknorm_lores.nii.gz","Normal",198,17,68,16,30,58,28,91,27,15,17,9,8,"Normal"
+"25","/home/bkandel/data/wolk_regression/processing_output/4019/20081118/4019_20081118_thicknorm_lores.nii.gz","MCI - memory plus other",115.62,NA,74,16,23,203.18,NA,NA,NA,NA,NA,NA,NA,"MCI"
+"26","/home/bkandel/data/wolk_regression/processing_output/7982/20110225/7982_20110225_thicknorm_lores.nii.gz","",124,22,81,18,28,83,30,94,23,NA,NA,7,5,NA
+"27","/home/bkandel/data/wolk_regression/processing_output/4839/20070425/4839_20070425_thicknorm_lores.nii.gz","MCI - memory",142.642,23,73,16,28,89.051,28,84,18,2,4,4,3,"MCI"
+"28","/home/bkandel/data/wolk_regression/processing_output/3975/20070215/3975_20070215_thicknorm_lores.nii.gz","AD probable",144.99,NA,62,18,24,122.44,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"29","/home/bkandel/data/wolk_regression/processing_output/2380/20070605/2380_20070605_thicknorm_lores.nii.gz","AD probable",124.703,6,59,12,17,150.484,22,300,7,0,4,1,1,"Dementia"
+"30","/home/bkandel/data/wolk_regression/processing_output/4940/20070629/4940_20070629_thicknorm_lores.nii.gz","AD probable",96.98,NA,90,10,15,389.9,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"31","/home/bkandel/data/wolk_regression/processing_output/5718/20080711/5718_20080711_thicknorm_lores.nii.gz","MCI - memory plus other",88.58,12,87,14,27,82.64,26,300,13,7,9,2,4,"MCI"
+"32","/home/bkandel/data/wolk_regression/processing_output/8326/20110625/8326_20110625_thicknorm_lores.nii.gz","MCI - memory plus other",150,NA,61,20,NA,77,NA,NA,NA,NA,NA,NA,NA,"MCI"
+"33","/home/bkandel/data/wolk_regression/processing_output/8233/20110317/8233_20110317_thicknorm_lores.nii.gz","",220,3,69,18,17,122,23,300,9,1,3,1,2,NA
+"34","/home/bkandel/data/wolk_regression/processing_output/5250/20081125/5250_20081125_thicknorm_lores.nii.gz","MCI - memory",114.05,13,81,18,28,153.11,26,146,12,2,8,4,2,"MCI"
+"35","/home/bkandel/data/wolk_regression/processing_output/7398/20111011/7398_20111011_thicknorm_lores.nii.gz","Normal",140,11,83,20,27,22,30,120,27,NA,NA,8,8,"Normal"
+"36","/home/bkandel/data/wolk_regression/processing_output/4380/20070305/4380_20070305_thicknorm_lores.nii.gz","Normal",244,13,65,8,30,59,22,151,19,2,3,7,3,"Normal"
+"37","/home/bkandel/data/wolk_regression/processing_output/4842/20070503/4842_20070503_thicknorm_lores.nii.gz","MCI - non-memory single",124.174,14,65,14,29,52.371,26,79,22,9,10,6,6,"Dementia"
+"38","/home/bkandel/data/wolk_regression/processing_output/8735/20111107/8735_20111107_thicknorm_lores.nii.gz","",204,16,71,16,28,26,27,112,12,NA,NA,4,3,NA
+"39","/home/bkandel/data/wolk_regression/processing_output/7291/20100310/7291_20100310_thicknorm_lores.nii.gz","AD probable",169,14,65,12,25,67,24,230,12,1,2,0,3,"Dementia"
+"40","/home/bkandel/data/wolk_regression/processing_output/4810/20080325/4810_20080325_thicknorm_lores.nii.gz","AD possible",122.85,18,70,12,26,137.48,26,96,16,0,4,0,4,"Dementia"
+"41","/home/bkandel/data/wolk_regression/processing_output/8342/20110225/8342_20110225_thicknorm_lores.nii.gz","AD probable",109,NA,67,12,NA,301,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"42","/home/bkandel/data/wolk_regression/processing_output/7671/20110412/7671_20110412_thicknorm_lores.nii.gz","",119,NA,80,18,NA,89,NA,NA,NA,NA,NA,NA,NA,NA
+"43","/home/bkandel/data/wolk_regression/processing_output/8576/20110902/8576_20110902_thicknorm_lores.nii.gz","",304,6,54,12,18,46,25,300,8,NA,NA,3,2,NA
+"44","/home/bkandel/data/wolk_regression/processing_output/4853/20070222/4853_20070222_thicknorm_lores.nii.gz","Frontotemporal dementia",298.04,14,66,18,30,94.83,30,100,19,16,15,5,4,"Dementia"
+"45","/home/bkandel/data/wolk_regression/processing_output/4688/20090629/4688_20090629_thicknorm_lores.nii.gz","MCI - memory plus other",103,7,79,18,23,89,13,300,8,0,8,0,3,"MCI"
+"46","/home/bkandel/data/wolk_regression/processing_output/7798/20100624/7798_20100624_thicknorm_lores.nii.gz","AD possible",113,15,67,18,27,43,30,107,2,1,8,998,2,"Dementia"
+"47","/home/bkandel/data/wolk_regression/processing_output/8163/20110303/8163_20110303_thicknorm_lores.nii.gz","Vascular dementia possible",123,6,72,14,21,86,14,300,14,NA,NA,3,3,NA
+"48","/home/bkandel/data/wolk_regression/processing_output/4821/20070216/4821_20070216_thicknorm_lores.nii.gz","AD probable",159.05,18,57,16,25,95.64,30,297,17,3,6,4,4,"Dementia"
+"49","/home/bkandel/data/wolk_regression/processing_output/4636/20061103/4636_20061103_thicknorm_lores.nii.gz","Normal",127.511,28,70,20,29,116.48,28,48,24,10,11,8,6,"Normal"
+"50","/home/bkandel/data/wolk_regression/processing_output/3867/20040317/3867_20040317_thicknorm_lores.nii.gz","AD probable",179.18,15,84,12,26,59.14,26,NA,16,12,20,3,4,"Dementia"
+"51","/home/bkandel/data/wolk_regression/processing_output/7696/20101116/7696_20101116_thicknorm_lores.nii.gz","Hydrocephalus",231,6,72,12,28,49,25,998,11,1,2,1,0,NA
+"52","/home/bkandel/data/wolk_regression/processing_output/3798.01/20090619/3798.01_20090619_thicknorm_lores.nii.gz","Normal",298,NA,68,16,30,31,NA,NA,NA,NA,NA,NA,NA,"Normal"
+"53","/home/bkandel/data/wolk_regression/processing_output/5630.01/20111019/5630.01_20111019_thicknorm_lores.nii.gz","MCI - memory plus other",171,14,81,16,30,96,26,98,22,NA,NA,7,6,"MCI"
+"54","/home/bkandel/data/wolk_regression/processing_output/6580/20101005/6580_20101005_thicknorm_lores.nii.gz","MCI - memory plus other",81,NA,69,16,26,88,NA,NA,NA,10,13,NA,NA,"MCI"
+"55","/home/bkandel/data/wolk_regression/processing_output/5089/20070709/5089_20070709_thicknorm_lores.nii.gz","AD probable",197.806,7,82,12,26,40.369,8,300,16,2,6,0,3,"Dementia"
+"56","/home/bkandel/data/wolk_regression/processing_output/5322/20071101/5322_20071101_thicknorm_lores.nii.gz","Normal",242.56,18,67,18,29,39.97,26,50,24,13,15,7,7,"Normal"
+"57","/home/bkandel/data/wolk_regression/processing_output/5005/20070413/5005_20070413_thicknorm_lores.nii.gz","AD probable",107.991,NA,78,11,22,221.099,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"58","/home/bkandel/data/wolk_regression/processing_output/8500/20110415/8500_20110415_thicknorm_lores.nii.gz","",92,NA,80,NA,NA,214,NA,NA,NA,NA,NA,NA,NA,NA
+"59","/home/bkandel/data/wolk_regression/processing_output/3720/20080618/3720_20080618_thicknorm_lores.nii.gz","Normal",300.65,27,86,16,29,42.19,29,80,25,17,16,9,7,"Normal"
+"60","/home/bkandel/data/wolk_regression/processing_output/4376/20071128/4376_20071128_thicknorm_lores.nii.gz","MCI - memory",94.484,NA,78,12,26,41.639,NA,NA,NA,NA,NA,NA,NA,"MCI"
+"61","/home/bkandel/data/wolk_regression/processing_output/3798.02/20090715/3798.02_20090715_thicknorm_lores.nii.gz","Normal",169,NA,76,14,29,110,NA,NA,NA,NA,NA,NA,NA,"Normal"
+"62","/home/bkandel/data/wolk_regression/processing_output/6117/20080826/6117_20080826_thicknorm_lores.nii.gz","Normal",270.99,24,58,20,30,38.14,29,48,27,16,15,9,8,"Normal"
+"63","/home/bkandel/data/wolk_regression/processing_output/6225/20080603/6225_20080603_thicknorm_lores.nii.gz","AD probable",174.31,6,54,12,15,225.22,16,996,7,0,2,0,2,"Dementia"
+"64","/home/bkandel/data/wolk_regression/processing_output/4392/20070309/4392_20070309_thicknorm_lores.nii.gz","AD probable",125.786,NA,86,12,19,72.909,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"65","/home/bkandel/data/wolk_regression/processing_output/3569/20060609/3569_20060609_thicknorm_lores.nii.gz","Normal",267,NA,75,18,30,42,NA,NA,NA,NA,NA,NA,NA,"Normal"
+"66","/home/bkandel/data/wolk_regression/processing_output/7078/20090702/7078_20090702_thicknorm_lores.nii.gz","",146,17,68,16,29,21,30,87,18,6,8,7,5,NA
+"67","/home/bkandel/data/wolk_regression/processing_output/5007/20070504/5007_20070504_thicknorm_lores.nii.gz","AD probable",86.096,11,64,16,20,28,24,996,8,1,4,0,0,"Dementia"
+"68","/home/bkandel/data/wolk_regression/processing_output/8171/20110304/8171_20110304_thicknorm_lores.nii.gz","AD probable",80,11,64,18,29,54,28,78,15,1,7,3,3,"Dementia"
+"69","/home/bkandel/data/wolk_regression/processing_output/5458/20071121/5458_20071121_thicknorm_lores.nii.gz","AD probable",178.38,15,65,12,23,68.45,25,50,11,0,0,0,4,"Dementia"
+"70","/home/bkandel/data/wolk_regression/processing_output/7009/20091203/7009_20091203_thicknorm_lores.nii.gz","MCI - memory",91,NA,56,18,28,82,NA,NA,NA,NA,NA,NA,NA,"MCI"
+"71","/home/bkandel/data/wolk_regression/processing_output/5895/20080130/5895_20080130_thicknorm_lores.nii.gz","AD probable",162.01,12,59,16,26,74.87,24,997,11,0,3,3,3,"Dementia"
+"72","/home/bkandel/data/wolk_regression/processing_output/7155/20091109/7155_20091109_thicknorm_lores.nii.gz","MCI - memory plus other",95,15,79,18,29,13,27,300,15,5,8,4,4,"MCI"
+"73","/home/bkandel/data/wolk_regression/processing_output/3726/20071214/3726_20071214_thicknorm_lores.nii.gz","Normal",153,22,84,18,28,155,28,82,21,11,11,6,6,"Normal"
+"74","/home/bkandel/data/wolk_regression/processing_output/5313/20070806/5313_20070806_thicknorm_lores.nii.gz","AD probable",126.281,8,76,12,21,115.846,25,300,10,0,4,1,3,"Dementia"
+"75","/home/bkandel/data/wolk_regression/processing_output/8354/20111007/8354_20111007_thicknorm_lores.nii.gz","MCI - memory plus other",162,19,83,20,27,69,27,NA,13,NA,NA,5,3,"MCI"
+"76","/home/bkandel/data/wolk_regression/processing_output/5671/20080318/5671_20080318_thicknorm_lores.nii.gz","MCI - non-memory single",229.74,20,63,18,28,31.67,30,57,15,10,9,5,2,"Dementia"
+"77","/home/bkandel/data/wolk_regression/processing_output/2381/20070330/2381_20070330_thicknorm_lores.nii.gz","AD probable",85.61,7,78,5,15,223.52,20,996,10,0,1,0,2,"Dementia"
+"78","/home/bkandel/data/wolk_regression/processing_output/5296/20070725/5296_20070725_thicknorm_lores.nii.gz","MCI - memory plus other",139.852,11,74,16,29,90.132,28,83,16,11,11,4,4,"MCI"
+"79","/home/bkandel/data/wolk_regression/processing_output/5219/20070611/5219_20070611_thicknorm_lores.nii.gz","Depression",122.81,16,69,18,28,125.7,26,69,24,15,14,7,7,NA
+"80","/home/bkandel/data/wolk_regression/processing_output/5231/20071025/5231_20071025_thicknorm_lores.nii.gz","MCI - memory plus other",137.42,7,61,16,25,110.51,19,246,8,4,4,2,1,"MCI"
+"81","/home/bkandel/data/wolk_regression/processing_output/3197.01/20080708/3197.01_20080708_thicknorm_lores.nii.gz","Normal",229.34,17,62,13,30,30.69,28,55,19,10,12,5,4,"Normal"
+"82","/home/bkandel/data/wolk_regression/processing_output/5335/20071128/5335_20071128_thicknorm_lores.nii.gz","Frontotemporal dementia",171.47,1,72,16,16,43.27,1,89,6,3,1,0,1,"Dementia"
+"83","/home/bkandel/data/wolk_regression/processing_output/5864/20080206/5864_20080206_thicknorm_lores.nii.gz","AD probable",122.81,17,66,14,25,125.24,25,144,13,0,4,0,4,"Dementia"
+"84","/home/bkandel/data/wolk_regression/processing_output/4953/20070710/4953_20070710_thicknorm_lores.nii.gz","AD probable",156.407,11,84,18,27,80.665,21,300,6,3,8,0,0,"Dementia"
+"85","/home/bkandel/data/wolk_regression/processing_output/5945/20110408/5945_20110408_thicknorm_lores.nii.gz","",249,17,64,16,29,49,27,175,16,NA,NA,4,4,NA
+"86","/home/bkandel/data/wolk_regression/processing_output/2344/20061128/2344_20061128_thicknorm_lores.nii.gz","Normal",238.95,16,79,12,28,54.07,24,131,23,13,12,9,6,"Normal"
+"87","/home/bkandel/data/wolk_regression/processing_output/4832/20070202/4832_20070202_thicknorm_lores.nii.gz","AD probable",109.866,NA,72,16,23,206.466,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"88","/home/bkandel/data/wolk_regression/processing_output/5021/20070614/5021_20070614_thicknorm_lores.nii.gz","MCI - memory",213.915,NA,83,16,27,82.001,NA,NA,NA,NA,11,NA,NA,"MCI"
+"89","/home/bkandel/data/wolk_regression/processing_output/5106/20090630/5106_20090630_thicknorm_lores.nii.gz","Normal",226,16,82,16,29,80,20,61,25,16,19,7,8,"Normal"
+"90","/home/bkandel/data/wolk_regression/processing_output/4005/20090827/4005_20090827_thicknorm_lores.nii.gz","AD probable",110,NA,83,16,24,119,NA,95,13,NA,NA,0,4,"Dementia"
+"91","/home/bkandel/data/wolk_regression/processing_output/2374/20061128/2374_20061128_thicknorm_lores.nii.gz","MCI - memory",301.42,18,68,10,26,43.5,NA,240,12,5,7,3,2,"MCI"
+"92","/home/bkandel/data/wolk_regression/processing_output/7175/20090922/7175_20090922_thicknorm_lores.nii.gz","AD probable",236,11,76,12,29,39,27,300,12,1,6,3,2,"Dementia"
+"93","/home/bkandel/data/wolk_regression/processing_output/8437/20120202/8437_20120202_thicknorm_lores.nii.gz","",155,7,73,16,26,303,22,300,13,NA,NA,4,2,NA
+"94","/home/bkandel/data/wolk_regression/processing_output/7635/20100621/7635_20100621_thicknorm_lores.nii.gz","AD probable",100,21,70,20,27,126,28,95,20,5,15,3,6,"Dementia"
+"95","/home/bkandel/data/wolk_regression/processing_output/8568/20111005/8568_20111005_thicknorm_lores.nii.gz","",147,NA,75,16,NA,111,NA,NA,NA,NA,NA,NA,NA,NA
+"96","/home/bkandel/data/wolk_regression/processing_output/3862/20070926/3862_20070926_thicknorm_lores.nii.gz","AD probable",141.36,NA,73,18,14,177.62,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"97","/home/bkandel/data/wolk_regression/processing_output/3723/20080618/3723_20080618_thicknorm_lores.nii.gz","Normal",323.5,23,80,18,30,50.49,30,139,28,21,21,10,9,"Normal"
+"98","/home/bkandel/data/wolk_regression/processing_output/4425/20061103/4425_20061103_thicknorm_lores.nii.gz","AD probable",117.31,13,79,12,21,82.1,22,178,10,0,8,0,2,"Dementia"
+"99","/home/bkandel/data/wolk_regression/processing_output/4795/20070822/4795_20070822_thicknorm_lores.nii.gz","MCI - non-memory single",237.864,13,86,15,29,80.437,22,95,21,5,9,5,5,"Dementia"
+"100","/home/bkandel/data/wolk_regression/processing_output/7414/20100302/7414_20100302_thicknorm_lores.nii.gz","Dementia - unspecified",282,18,70,16,23,35,28,300,17,6,8,6,3,NA
+"101","/home/bkandel/data/wolk_regression/processing_output/4110/20070417/4110_20070417_thicknorm_lores.nii.gz","Depression with cognitive impairment",207.46,12,56,4,28,28,21,245,18,1,3,5,5,NA
+"102","/home/bkandel/data/wolk_regression/processing_output/5822/20080417/5822_20080417_thicknorm_lores.nii.gz","AD possible",165.82,7,74,6,20,15.56,13,300,9,6,6,2,2,"Dementia"
+"103","/home/bkandel/data/wolk_regression/processing_output/8064/20110222/8064_20110222_thicknorm_lores.nii.gz","MCI - memory plus other",136,21,70,18,28,88,28,108,20,2,5,6,5,"MCI"
+"104","/home/bkandel/data/wolk_regression/processing_output/5378/20070907/5378_20070907_thicknorm_lores.nii.gz","AD possible",122.85,15,76,20,26,87.5,23,115,17,2,3,7,3,"Dementia"
+"105","/home/bkandel/data/wolk_regression/processing_output/8289/20110211/8289_20110211_thicknorm_lores.nii.gz","Other major psychiatric illness",107,9,68,12,18,196,21,998,9,2,2,0,3,NA
+"106","/home/bkandel/data/wolk_regression/processing_output/6090/20080314/6090_20080314_thicknorm_lores.nii.gz","AD possible",137.41,9,72,2,9,89.49,8,995,6,995,995,0,1,"Dementia"
+"107","/home/bkandel/data/wolk_regression/processing_output/6538/20081006/6538_20081006_thicknorm_lores.nii.gz","",262.69,NA,65,18,NA,64.07,NA,NA,NA,NA,NA,NA,NA,NA
+"108","/home/bkandel/data/wolk_regression/processing_output/2387/20080327/2387_20080327_thicknorm_lores.nii.gz","Dementia of undetermined etiology",210.52,6,68,12,22,27.01,16,300,11,0,2,2,3,NA
+"109","/home/bkandel/data/wolk_regression/processing_output/5907/20080125/5907_20080125_thicknorm_lores.nii.gz","MCI - memory plus other",106.75,18,68,16,29,94.1,25,68,18,0,4,1,5,"MCI"
+"110","/home/bkandel/data/wolk_regression/processing_output/6205/20091023/6205_20091023_thicknorm_lores.nii.gz","AD probable",121,5,77,16,10,156,14,300,0,0,0,0,0,"Dementia"
+"111","/home/bkandel/data/wolk_regression/processing_output/7062/20100105/7062_20100105_thicknorm_lores.nii.gz","MCI - memory",283,NA,75,18,28,56,NA,NA,NA,NA,NA,NA,NA,"MCI"
+"112","/home/bkandel/data/wolk_regression/processing_output/5123/20070718/5123_20070718_thicknorm_lores.nii.gz","AD possible",140.6,4,78,6,12,88.842,5,996,0,0,0,0,0,"Dementia"
+"113","/home/bkandel/data/wolk_regression/processing_output/5314/20080110/5314_20080110_thicknorm_lores.nii.gz","MCI - memory plus other",197.61,13,75,12,28,28.51,17,214,15,0,2,0,4,"MCI"
+"114","/home/bkandel/data/wolk_regression/processing_output/6761/20090310/6761_20090310_thicknorm_lores.nii.gz","AD probable",123,16,75,16,26,180,25,80,10,3,5,9,3,"Dementia"
+"115","/home/bkandel/data/wolk_regression/processing_output/8020/20110118/8020_20110118_thicknorm_lores.nii.gz","MCI - memory",183,17,62,16,29,52,30,50,13,9,7,3,4,"MCI"
+"116","/home/bkandel/data/wolk_regression/processing_output/4574/20060831/4574_20060831_thicknorm_lores.nii.gz","",102.91,8,78,12,20,175.07,28,995,5,2,5,1,0,NA
+"117","/home/bkandel/data/wolk_regression/processing_output/4006/20070712/4006_20070712_thicknorm_lores.nii.gz","AD probable",30.57,NA,75,18,18,94.42,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"118","/home/bkandel/data/wolk_regression/processing_output/3725/20071214/3725_20071214_thicknorm_lores.nii.gz","PDD",214,22,84,16,27,64,25,172,17,12,15,0,4,NA
+"119","/home/bkandel/data/wolk_regression/processing_output/7350/20110701/7350_20110701_thicknorm_lores.nii.gz","Normal",192,25,70,12,29,60,29,38,19,NA,NA,8,4,"Normal"
+"120","/home/bkandel/data/wolk_regression/processing_output/7959/20101108/7959_20101108_thicknorm_lores.nii.gz","",98,NA,59,16,NA,64,NA,NA,NA,NA,NA,NA,NA,NA
+"121","/home/bkandel/data/wolk_regression/processing_output/7226/20091015/7226_20091015_thicknorm_lores.nii.gz","Hydrocephalus",85,7,85,12,19,8,24,996,3,0,2,0,1,NA
+"122","/home/bkandel/data/wolk_regression/processing_output/3566/20100326/3566_20100326_thicknorm_lores.nii.gz","Normal",143,NA,77,16,29,71,NA,NA,NA,NA,NA,NA,NA,"Normal"
+"123","/home/bkandel/data/wolk_regression/processing_output/4559/20061025/4559_20061025_thicknorm_lores.nii.gz","memory loss",109.7,14,79,16,29,67.29,24,264,15,4,12,4,5,NA
+"124","/home/bkandel/data/wolk_regression/processing_output/7167/20090924/7167_20090924_thicknorm_lores.nii.gz","Other major psychiatric illness",322,NA,51,13,NA,25,NA,NA,NA,NA,NA,NA,NA,NA
+"125","/home/bkandel/data/wolk_regression/processing_output/3756/20090217/3756_20090217_thicknorm_lores.nii.gz","AD probable",77.091,NA,92,16,NA,47.859,NA,NA,NA,NA,NA,NA,NA,"Dementia"
+"126","/home/bkandel/data/wolk_regression/processing_output/4357/20080408/4357_20080408_thicknorm_lores.nii.gz","MCI - non-memory single",87.11,17,64,18,25,57.7,28,176,17,10,12,5,3,"Dementia"
+"127","/home/bkandel/data/wolk_regression/processing_output/5003/20081007/5003_20081007_thicknorm_lores.nii.gz","MCI - memory plus other",199.9,8,67,4,20,94.5,11,300,18,2,4,3,4,"MCI"
+"128","/home/bkandel/data/wolk_regression/processing_output/3886/20080415/3886_20080415_thicknorm_lores.nii.gz","MCI possible",98.5,15,74,20,27,32.7,26,171,18,10,14,8,5,NA
+"129","/home/bkandel/data/wolk_regression/processing_output/4895/20070220/4895_20070220_thicknorm_lores.nii.gz","AD probable",188.06,7,82,12,17,105.13,9,996,9,2,2,2,2,"Dementia"
+"130","/home/bkandel/data/wolk_regression/processing_output/4469/20060927/4469_20060927_thicknorm_lores.nii.gz","MCI - memory",147.9,NA,69,12,25,81.79,NA,NA,NA,0,5,NA,NA,"MCI"
+"131","/home/bkandel/data/wolk_regression/processing_output/4843/20070514/4843_20070514_thicknorm_lores.nii.gz","MCI - memory plus other",204.396,12,74,12,27,78.394,28,300,18,8,8,3,5,"MCI"
+"132","/home/bkandel/data/wolk_regression/processing_output/3505/20080326/3505_20080326_thicknorm_lores.nii.gz","MCI probable",116.76,10,81,15,23,40.29,28,300,13,5,7,5,3,NA
+"133","/home/bkandel/data/wolk_regression/processing_output/7142/20091121/7142_20091121_thicknorm_lores.nii.gz","Vascular dementia probable",244,12,83,12,23,36,20,300,13,0,1,1,3,NA
+"134","/home/bkandel/data/wolk_regression/processing_output/5387/20090803/5387_20090803_thicknorm_lores.nii.gz","AD probable",104,NA,57,12,10,351,NA,996,3,NA,NA,0,0,"Dementia"
+"135","/home/bkandel/data/wolk_regression/processing_output/4662/20090811/4662_20090811_thicknorm_lores.nii.gz","Normal",157,NA,63,18,30,82,NA,NA,NA,NA,NA,NA,NA,"Normal"
+"136","/home/bkandel/data/wolk_regression/processing_output/4501/20061114/4501_20061114_thicknorm_lores.nii.gz","MCI - non-memory single",135.3,12,74,18,28,72.24,27,300,21,12,13,7,6,"Dementia"
+"137","/home/bkandel/data/wolk_regression/processing_output/4308/20070928/4308_20070928_thicknorm_lores.nii.gz","MCI - memory",256.62,15,64,6,25,34.53,25,288,12,8,11,3,4,"MCI"
+"138","/home/bkandel/data/wolk_regression/processing_output/5569/20080220/5569_20080220_thicknorm_lores.nii.gz","MCI - memory",182.99,17,74,16,27,77.69,21,111,20,0,2,4,6,"MCI"
+"139","/home/bkandel/data/wolk_regression/processing_output/5222/20070627/5222_20070627_thicknorm_lores.nii.gz","AD probable",101.225,9,82,18,20,175.08,15,94,7,0,0,0,2,"Dementia"
+"140","/home/bkandel/data/wolk_regression/processing_output/4910/20070327/4910_20070327_thicknorm_lores.nii.gz","MCI - memory plus other",116.12,12,81,18,28,37.5,18,300,16,1,5,3,5,"MCI"
+"141","/home/bkandel/data/wolk_regression/processing_output/5855/20080422/5855_20080422_thicknorm_lores.nii.gz","MCI - memory plus other",222.92,9,62,4,24,18.29,15,300,14,0,2,5,4,"MCI"

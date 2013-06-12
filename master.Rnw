@@ -1,0 +1,170 @@
+\documentclass{article}
+
+\title{Demonstration of Sparse Regression for Predicting Cognitive Data}
+\author{Benjamin Kandel \and David Wolk \and James C. Gee \and Brian Avants}
+\date{}
+\begin{document}
+\maketitle
+First, we load in the libraries: 
+<<load.lib, size='small', tidy=F, results='hide'>>=
+suppressMessages(require(ANTsR))
+getPckg <- function(pckg){
+  install.packages(pckg, repos = "http://cran.r-project.org")
+}
+pckg = try(require(xtable))
+if(!pckg) {
+cat("Installing 'xtable' from CRAN.\n")
+getPckg("xtable")
+require("xtable")
+}
+pckg <- try(require(glmnet))
+if(!pckg){
+  cat("Installing 'glmnet' from CRAN.\n")
+  getPckg("glmnet")
+  require("glmnet")
+}
+options(digits=2) # for setting knitr outputs
+@
+Now, we can load in the data: 
+<<load.data, size='small', tidy=F>>=
+img.age.train <- as.matrix(antsImageRead('data/image_data/age_train.mha', 2))
+img.age.test <- as.matrix(antsImageRead('data/image_data/age_test.mha', 2))
+demog.age.train <- read.csv('data/demog/train_demog_age.csv')
+demog.age.train$age <- as.double(demog.age.train$age) # convert from int
+demog.age.test <- read.csv('data/demog/test_demog_age.csv')
+demog.age.test$age <- as.double(demog.age.test$age)
+mask <- antsImageRead('data/template/GM_mask_lores_trimmed.nii.gz', 3)
+
+@
+Now, we perform the regression on the training data: 
+<<sparseRegression, results='hide', size='small', tidy=F>>=
+regress.age <- sparseRegression(inmatrix=img.age.train, outcome='age', 
+    demog=demog.age.train, mask=mask, sparseness=0.05, 
+    nvecs=6, its=5, cthresh=250)
+@
+And then use the result to predict outcome in the testing data: 
+<<regressProjections, size='small', tidy=F>>=
+age.prediction <- regressProjections(img.age.train, img.age.test, 
+    demog.age.train, demog.age.test, regress.age$eigenanatomyimages, 
+    mask, 'age', covariates=c("edu"))
+pdf('fig/AgePredictionOurMethod.pdf')
+plot(age.prediction$outcome.comparison$real, 
+     age.prediction$outcome.comparison$predicted, 
+     xlab = 'Real age', ylab = 'Predicted age', 
+     main='Predicted vs. Real Age Using Our Method')
+dev.off()
+@
+We also compare to the results from the elastic net: 
+<<glmnet.age, size='small', tidy=F>>=
+fit.age.glm.cv <- cv.glmnet(img.age.train, demog.age.train$age, alpha=0.5)
+fit.age.glm <- glmnet(img.age.train, demog.age.train$age, alpha=0.5)
+betas.glm.age <- as.matrix(coef(fit.age.glm, s=fit.age.glm.cv$lambda.min))
+betas.glm.age <- betas.glm.age[-1] # remove intercept
+age.glm.prediction <- predict(fit.age.glm.cv, img.age.test, 
+     s=fit.age.glm.cv$lambda_min)
+age.glm.corcoeff <- cor.test(age.glm.prediction, 
+                             demog.age.test$age)$estimate[[1]]
+age.glm.pvalue <- cor.test(age.glm.prediction, demog.age.test$age)$p.value
+age.glm.error <- mean(abs(age.glm.prediction - demog.age.test$age))
+pdf('fig/AgePredictionGLMNET.pdf')
+plot(demog.age.test$age,
+     age.glm.prediction,      
+     xlab = 'Real age', ylab = 'Predicted age', 
+     main='Predicted vs. Real Age Using GLMNET')
+dev.off()
+@
+
+
+\begin{figure}
+\centering
+\includegraphics[width=10cm]{fig/AgePredictionOurMethod.pdf}
+\includegraphics[width=10cm]{fig/AgePredictionGLMNET.pdf}
+\caption{Predicting age using our method.  Correlation coefficient in the test dataset using our method is  \Sexpr{age.prediction$stats$corcoeff.test}, with p-value of \Sexpr{age.prediction$stats$pvalue.test}, and using the elastic net is \Sexpr{age.glmnet.corcoeff} with p-value \Sexpr{age.glmnet.pvalue}.}
+\label{fig:age_our_method}
+\end{figure}
+
+Now that we have performed the regression, we can visualize the results, first for our method and then for the elastic net: 
+<<vis, tidy=F, size='small', results='hide'>>=
+lateralLeft <- rotationMatrix(pi/2, 0, -1, 0) %*% rotationMatrix(pi/2, -1, 0, 0)
+sagittalLeft <- rotationMatrix(-pi/2, 0, -1, 0) %*% rotationMatrix(pi/2, -1, 0, 0)
+lateralRight <- rotationMatrix(-pi/2, 0, -1, 0) %*% rotationMatrix(pi/2, -1, 0, 0)
+sagittalRight <- rotationMatrix(pi/2, 0, -1, 0) %*% rotationMatrix(pi/2, -1, 0, 0)
+glass <- antsImageRead('data/template/glassbrain.nii.gz', 3)
+wm <- antsImageRead('data/template/WM.nii.gz', 3)
+leftright <- antsImageRead('data/template/leftright.nii.gz', 3)
+eigenvectors.left <- list()
+eigenvectors.right <- list()
+for (i in length(regress.age$eigenanatomyimages):1){
+  eigenvectors.left[[i]] <- maskImage(regress.age$eigenanatomyimages[[i]], 
+                                      leftright, 1)
+  eigenvectors.right[[i]] <- maskImage(regress.age$eigenanatomyimages[[i]], 
+                                       leftright, 2)
+  if(length(eigenvectors.left[[i]][eigenvectors.left[[i]] > 0]) == 0){
+    eigenvectors.left[[i]] <- NULL # delete eigenvectors with only zeros
+  }
+  if(length(eigenvectors.right[[i]][eigenvectors.right[[i]] > 0]) == 0){
+    eigenvectors.right[[i]] <- NULL
+  }
+}
+wm.left <- maskImage(wm, leftright, 1)
+wm.right <- maskImage(wm, leftright, 2)
+glass.left <- maskImage(glass, leftright, 1)
+glass.right <- maskImage(glass, leftright, 2)
+age.vis.left <- renderSurfaceFunction( list( wm.left, glass.left ), 
+    eigenvectors.left, surfval=0.5, alphasurf=c(1, 0.2), 
+    basefval = 1.5, alphafunc=1)
+# you may need to customize visualization parameters for your display
+par3d(userMatrix=lateralLeft, windowRect=c(25,25,325,325), zoom=0.8 ) 
+rgl.snapshot('fig/age_lateral_left.png')
+par3d(userMatrix=sagittalLeft, windowRect=c(25,25,325,325), zoom=0.9)
+rgl.snapshot('fig/age_sagittal_left.png')
+age.vis.right <- renderSurfaceFunction(list(wm.right, glass.right), 
+    eigenvectors.right, surfval=0.5, alphasurf=c(1, 0.2), 
+    basefval=1.5, alphafunc=1)
+par3d(userMatrix=lateralRight, windowRect=c(25,25,325,325), zoom=0.8 ) 
+rgl.snapshot('fig/age_lateral_right.png')
+par3d(userMatrix=sagittalRight, windowRect=c(25,25,325,325), zoom=0.9)
+rgl.snapshot('fig/age_sagittal_right.png')
+# now visualization for elastic net
+img.glm.age <- antsImageClone(mask)
+img.glm.age[mask > 0 ] <- betas.glm.age
+img.glm.age.left <- maskImage(img.glm.age, leftright, 1)
+img.glm.age.right <- maskImage(img.glm.age, leftright, 2)
+vis.age.glm.left <- renderSurfaceFunction(list(wm.left, glass.left), 
+    list(img.glm.age.left), surfval=0.5, alphasurf=c(1, 0.2), 
+    alphafunc=1, basefval=0.1)
+par3d(userMatrix=lateralLeft, windowRect=c(25,25,325,325), zoom=0.8 ) 
+rgl.snapshot('fig/age_glm_lateral_left.png')
+par3d(userMatrix=sagittalLeft, windowRect=c(25,25,325,325), zoom=0.9)
+rgl.snapshot('fig/age_glm_sagittal_left.png')
+vis.age.glm.right <- renderSurfaceFunction(list(wm.right, glass.right), 
+    list(img.glm.age.right), surfval=0.5, alphasurf=c(1, 0.2), 
+    alphafunc=1, basefval=0.1)
+par3d(userMatrix=lateralRight, windowRect=c(25,25,325,325), zoom=0.8 ) 
+rgl.snapshot('fig/age_glm_lateral_right.png')
+par3d(userMatrix=sagittalRight, windowRect=c(25,25,325,325), zoom=0.9)
+rgl.snapshot('fig/age_glm_sagittal_right.png')
+@
+The results can be seen in \ref{fig:age_our_pics} and \ref{fig:age_glm_pics}. 
+
+\begin{figure}
+\includegraphics[width=4cm]{fig/age_lateral_left.png}
+\includegraphics[width=4cm]{fig/age_sagittal_left.png}
+\includegraphics[width=4cm]{fig/age_sagittal_right.png}
+\includegraphics[width=4cm]{fig/age_lateral_right.png}
+\caption{Regions returned by our method for age prediction.}
+\label{fig:age_our_pics}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=4cm]{fig/age_glm_lateral_left.png}
+\includegraphics[width=4cm]{fig/age_glm_sagittal_left.png}
+\includegraphics[width=4cm]{fig/age_glm_sagittal_right.png}
+\includegraphics[width=4cm]{fig/age_glm_lateral_right.png}
+\caption{Regions returned by the elastic net method for age prediction.}
+\label{fig:age_glm_pics}
+\end{figure}
+
+
+
+\end{document}

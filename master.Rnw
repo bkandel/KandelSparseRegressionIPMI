@@ -61,7 +61,7 @@ fit.age.glm <- glmnet(img.age.train, demog.age.train$age, alpha=0.5)
 betas.glm.age <- as.matrix(coef(fit.age.glm, s=fit.age.glm.cv$lambda.min))
 betas.glm.age <- betas.glm.age[-1] # remove intercept
 age.glm.prediction <- predict(fit.age.glm.cv, img.age.test, 
-     s=fit.age.glm.cv$lambda_min)
+     s=fit.age.glm.cv$lambda.min)
 age.glm.corcoeff <- cor.test(age.glm.prediction, 
                              demog.age.test$age)$estimate[[1]]
 age.glm.pvalue <- cor.test(age.glm.prediction, demog.age.test$age)$p.value

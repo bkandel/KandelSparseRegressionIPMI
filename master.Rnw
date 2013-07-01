@@ -165,6 +165,13 @@ The results can be seen in \ref{fig:age_our_pics} and \ref{fig:age_glm_pics}.
 \label{fig:age_glm_pics}
 \end{figure}
 
+The same code applies to the wordlistmemorytrial1 (visualized in paper), bnt, and wordlistrecalltotal tests,
+with the exception that these cognitive
+tests are residualized against disease state (diseased or normal).  The CSV and input matrices are in 
+demog/wolk_regression_train_*ResidWrtDx.csv, and the input image matrices are in 
+data/image_data. 
+
+
 
 
 \end{document}
